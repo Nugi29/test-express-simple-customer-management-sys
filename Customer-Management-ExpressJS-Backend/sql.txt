@@ -1,0 +1,25 @@
+CREATE DATABASE IF NOT EXISTS customer_manage;
+
+-- Use the database
+USE customer_manage;
+
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    salary DECIMAL(10, 2) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL
+);
+
+-- Insert sample data (based on your existing data)
+INSERT INTO customer (salary, address, name) VALUES
+(30000, 'Gampaha', 'Kamal'),
+(73000, '34/2, Main Street, Galle', 'Sunil Fernando'),
+(105000, '88, Temple Road, Jaffna', 'Ravi Kanth'),
+(65000.25, '21, Hospital Road, Matara', 'Chathurika Silva'),
+(99000, '56, Negombo Road, Wattala', 'Tharidu Jayasuriya'),
+(87000.6, '5, Stanley Thilakarathne Mawatha, Nugegoda', 'Lakshmi Wijesinghe'),
+(78000, '14, Sea Street, Negombo', 'Ruwan De Silva'),
+(96000.85, '98, Malwatta Road, Kandy', 'Isuru Madushanka'),
+(69000, '3, Dharmapala Mawatha, Anuradhapura', 'Dilani Herath'),
+(85000, 'No. 45, Galle Road, Colombo 03', 'Kamal Perera'),
+(92000.5, '12/1, Kandy Road, Kurunegala', 'Nimali Rajapaksha')
